@@ -76,10 +76,10 @@ def replace_receipt(username, enter_time, exit_time, fee):
     finally:
         if (sqliteConnection):
             sqliteConnection.close()
-sqliteConnection = sqlite3.connect('db.sqlite3')
-cursor = sqliteConnection.cursor()
+# sqliteConnection = sqlite3.connect('db.sqlite3')
+# cursor = sqliteConnection.cursor()
 
-sql_select_query = """DELETE FROM receipts_receipt WHERE lot_no =  ?"""
-cursor.execute(sql_select_query, ('3',) )
-sqliteConnection.commit()
-cursor.close()
+# sql_select_query = """DELETE FROM receipts_receipt WHERE lot_no = ?"""
+# cursor.execute(sql_select_query, ('2',) )
+# sqliteConnection.commit()
+# cursor.close()

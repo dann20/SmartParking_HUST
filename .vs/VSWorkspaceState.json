@@ -1,16 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\frontend",
-    "\\frontend\\src",
-    "\\frontend\\src\\component",
-    "\\frontend\\src\\component\\accounts",
-    "\\frontend\\src\\component\\layout",
-    "\\frontend\\src\\component\\receipts",
-    "\\frontend\\src\\reducers",
-    "\\receipts",
+    "\\accounts",
     "\\Smart_Parking"
   ],
-  "SelectedNode": "\\frontend\\src\\component\\receipts\\Receipts.js",
+  "SelectedNode": "\\accounts\\serializers.py",
   "PreviewInSolutionExplorer": false
 }

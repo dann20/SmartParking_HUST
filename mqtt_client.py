@@ -22,15 +22,15 @@ def on_message(client, obj, msg):
         print(lot_2)
         print(lot_3)
         
-        if ("user" in lot_1.keys()) and ("fee" in lot_1.keys()):
+        if ("user" in lot_1.keys()) and ("fee" in lot_1.keys()) and "NO" in lot_1["lot/status"]:
             add_receipt.insertReceipt(add_receipt.count_receipt(), '1', lot_1["time-in"], lot_1["time-out"], lot_1["user"], lot_1["fee"]) 
             print("ADD LOT 1")
             lot_1.clear()
-        if ("user" in lot_2.keys()) and ("fee" in lot_2.keys()):
+        if ("user" in lot_2.keys()) and ("fee" in lot_2.keys()) and "NO" in lot_2["lot/status"]:
             add_receipt.insertReceipt(add_receipt.count_receipt(), '2', lot_2["time-in"], lot_2["time-out"], lot_2["user"], lot_2["fee"]) 
             print("ADD LOT 2")
             lot_2.clear()
-        if ("user" in lot_3.keys()) and ("fee" in lot_3.keys()):
+        if ("user" in lot_3.keys()) and ("fee" in lot_3.keys()) and "NO" in lot_3["lot/status"]:
             add_receipt.insertReceipt(add_receipt.count_receipt(), '3', lot_3["time-in"], lot_3["time-out"], lot_3["user"], lot_3["fee"]) 
             print("ADD LOT 3")
             lot_3.clear()
